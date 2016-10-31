@@ -19,6 +19,7 @@ class Note: NSObject, NSCoding {
     var image: UIImage?
     var catagory: Int = 0
     var priority: Double = 0.0
+
     
     let titleKey = "title"
     let textKey = "text"
@@ -58,6 +59,7 @@ class Note: NSObject, NSCoding {
         self.completed = aDecoder.decodeBool(forKey: completedKey)
         self.catagory = aDecoder.decodeInteger(forKey: catagoryKey)
         self.priority = aDecoder.decodeDouble(forKey: priorityKey)
+        
     }
     
     func encode(with aCoder: NSCoder) {
@@ -69,6 +71,7 @@ class Note: NSObject, NSCoding {
         aCoder.encode(completed, forKey: completedKey)
         aCoder.encode(catagory, forKey: catagoryKey)
         aCoder.encode(priority, forKey: priorityKey)
+
     }
     
 }

@@ -115,7 +115,9 @@ class NoteDetailViewController: UIViewController, UIPickerViewDelegate, UIPicker
         note.dueDate = dueDateLabel.text!
         note.catagory = catagoryPicker.selectedRow(inComponent: 0)
         note.completed = completedSwitch.isOn
+        
     }
+    
     
     
     // MARK: - IBActions
